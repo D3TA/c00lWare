@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("c00lWare Beta", "Sentinel")
-local Main = Window:NewTab("Main")
+local Main = Window:NewTab("Bedwars")
 local Vape = Main:NewSection("Vape")
 local Sape = Main:NewSection("Sape")
 local Engoware = Main:NewSection("Engoware")
@@ -36,4 +36,9 @@ Future:NewButton("Future", "Future is One Of the Best Client but Still not bad!"
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/Future/main/Initiate.lua"))()
 end)
+local CombatWarriors = Window:NewTab("Combat Warriors")
+local combat = CombatWarriors:NewSection("Project Hook")
 
+combat:NewButton("Project Hook", "Best Combat Warriors Script", function()
+    loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
