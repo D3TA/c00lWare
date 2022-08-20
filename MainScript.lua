@@ -1,5 +1,10 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("c00lWare Beta", "Sentinel")
+local VeryMain = Window:NewTab("Main")
+local IY = VeryMain:NewSection("Infinite Yield")
+IY:NewButton("Infinite Yield", "Infinite Yield is The Very Best Admin script on Roblox.", function()
+	loadstring(game:HttpGet("raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end)
 local Main = Window:NewTab("Bedwars")
 local Vape = Main:NewSection("Vape")
 local Sape = Main:NewSection("Sape")
@@ -38,7 +43,13 @@ Future:NewButton("Future", "Future is One Of the Best Client but Still not bad!"
 end)
 local CombatWarriors = Window:NewTab("Combat Warriors")
 local combat = CombatWarriors:NewSection("Project Hook")
+local new = CombatWarriors:NewSection("goofy ahh script")
 
-combat:NewButton("Project Hook", "Best Combat Warriors Script", function()
+combat:NewButton("Project Hook", "Best Combat Warriors Script.", function()
     loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
+
+new:NewButton("goofy ahh script", "New Combat Warriors Script.", function()
+	getgenv().KillAuraHitCooldown = 0.01
+    loadstring(game:HttpGet("https://cheeseskid.tk/shit/main_old_ui.lua",true))()
 end)
